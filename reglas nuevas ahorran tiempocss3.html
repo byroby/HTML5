@@ -9,18 +9,35 @@
     <style>
         #principal{
             width:500px;
-            background-color: blue;
+            /*background-color: blue;*/
             text-align:center;
             margin: 15px auto;
             padding:15px;
             border:3px solid red;
             border-radius: 15px;
             box-shadow: rosybrown 5px 5px 5px;
+            background: -moz-radial-gradient(center,ellipse,red,yellow);
+            background: -webkit-radial-gradient(center,ellipse,red,yellow);
+            /*outline: 5px dashed blue;
+            outline-offset: 15px;*/
+            /*-moz-transform: scale(1,-1);*/
+            /*-moz-transform: rotate(5deg);*/
+            /*-moz-transform: skew(30deg);*/
+            -moz-transition: -moz-transform 1s ease 0.5s;
+        }
+        
+        #principal:hover{
+          -moz-transform: rotate(5deg);
+        }
+        @font-face{
+          font-family:monospace;
+          src:url ('BAUHS93.ttf');
         }
 
         #titulo{
-          font:bold 36px verdana, Geneva, sans-serif;
+          font:bold 36px monospace;
           text-shadow: springgreen 3px 3px 5px;
+          color:rgba(0,0,0,0.9)
     
         }
 
